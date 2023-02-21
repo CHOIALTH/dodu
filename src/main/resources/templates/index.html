@@ -77,7 +77,7 @@
         <!-- Section-->
         <section class="py-1">
             <div class="d-flex justify-content-start">
-                <div class="p-2 font" style="font-size: 8px; margin: 3px "> <b th:text="${mentee.getNickname()}" />님을 위한 추천 카테고리</div>
+<!--                <div class="p-2 font" style="font-size: 8px; margin: 3px "> <b th:text="${mentee?.getNickname()}" />님을 위한 추천 카테고리</div>-->
             </div>
             <div th:if="${not #lists.isEmpty(categories)}">
             <div class="btn-toolbar text-center" role="toolbar" aria-label="Toolbar with button groups"
